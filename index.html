@@ -16,15 +16,18 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand">ToDoApp</a>
-          <form class="d-flex">
+          <form action="./login_welcome_page.html" class="d-flex" onsubmit="return signup()">
             <input class="form-control me-2" type="email" placeholder="username" id="user_name" aria-label="username">
             <input class="form-control me-2" type="password" placeholder="password" id="user_password" aria-label="password">
             <button class="btn btn-outline-success" type="submit">Login</button>
+            <br>
+            <span class="error" id="me_password"></span>
           </form>
         </div>
       </nav>
 
     <!-- ending of Nav Bar -->
     <h1>Hello</h1>
+    <script src="./script/script.js"></script>
 </body>
 </html>
