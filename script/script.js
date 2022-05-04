@@ -1,17 +1,31 @@
 var uname = document.getElementById("user_name");
 var upassword = document.getElementById("user_password");
 
-function signup(){
+function signup(callback){
+
     if(uname.value == "" || upassword.value ==""){
-        alert("in if");
-        // me_user.innerText="required";
-        // me_user.style.color="red";
-        me_password.innerText="required";
-        me_password.style.color="red";
-        var flag =  false;
+
+        alert("username and password cannot be empty");
+        flag = false;
+        
     }else{
-        alert("else");
-        var flag = true;
+       
+        callback(flag)
+
     }
+
+    return flag;
+}
+function approval(flag){
+    var flag;
+    if(uname.value == "admin" && upassword.value == 12345){
+
+        flag = true;
+
+    }else{
+        alert("username or password is incorrect");
+        flag = false;
+    }
+
     return flag;
 }
