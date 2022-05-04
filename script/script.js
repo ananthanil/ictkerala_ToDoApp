@@ -22,7 +22,8 @@ function approval(flag){
 
         flag = true;
 
-    }else{
+    }
+    else{
         alert("username or password is incorrect");
         flag = false;
     }
