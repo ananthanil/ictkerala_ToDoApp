@@ -30,3 +30,7 @@ function approval(flag){
 
     return flag;
 }
+
+function logout(){
+    window.location.href = "../index.html";
+}
