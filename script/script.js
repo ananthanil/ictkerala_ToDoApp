@@ -43,9 +43,9 @@ function ajax(){
         //condition
         if(this.readyState==4 && this.status==200){
             var response = JSON.parse(this.responseText);
-            var output ="";
+            var output =""
             for(var i=0;i<response.length;i++){
-                output += "<li>"+response[i].title+"</li>";
+                output += "<li>"+response[i].id+response[i].title+response[i].completed+"</li>";
             }
             document.getElementById("demo").innerHTML = output;
         }
