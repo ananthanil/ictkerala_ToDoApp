@@ -45,7 +45,8 @@ function ajax(){
             var response = JSON.parse(this.responseText);
             var output =""
             for(var i=0;i<response.length;i++){
-                output += "<li>"+response[i].id+response[i].title+response[i].completed+"</li>";
+                // output += "<span>"+response[i].id+"</span>";
+                output += "<li>"+response[i].title+"</li>";
             }
             document.getElementById("demo").innerHTML = output;
         }
