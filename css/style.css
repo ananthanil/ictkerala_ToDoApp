@@ -1,6 +1,11 @@
 body{
     background-color:  #C0C0C0;
 }
+.error{
+    color: red;
+    margin-left: 0.5%;
+    text-align: center;
+}
 footer{
     background-color:  #2F343B;
     text-align: center;
