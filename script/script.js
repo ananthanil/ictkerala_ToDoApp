@@ -10,7 +10,10 @@ function signin(callback){
 }
 
 function redirect(){
-    
    window.location.href="login_welcome_page.html"
-    alert("ad ello");
 }
+
+function signout(){
+    window.location.href="../index.html"
+ }
+ 
