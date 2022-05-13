@@ -16,4 +16,8 @@ function redirect(){
 function signout(){
     window.location.href="../index.html"
  }
+
+function display(){
+    
+}
  
